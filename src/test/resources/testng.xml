@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="JobSuite" parallel="false">
+	<parameter name="appUrl" value="http://www.tut.by/" />
+	<test name="Test">
+		<parameter name="request" value="специалист по тестированию" />
+		<parameter name="regexp" value="^.*специалист .*по .*тестировани(ю|я).*$" />
+		<classes>
+			<class name="n.yarmak.tests.JobTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- JobSuite -->
